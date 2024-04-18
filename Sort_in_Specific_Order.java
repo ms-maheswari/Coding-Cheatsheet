@@ -1,3 +1,5 @@
+//  Sort the odd numbers of array in ascending order and even numbers in descending order
+
 import java.util.Arrays;
 
 public class Sort_in_Specific_Order {
