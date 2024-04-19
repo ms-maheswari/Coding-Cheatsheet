@@ -1,5 +1,6 @@
 
 import java.io.*;
+import java.util.Scanner;
 
 // Main class
 public class Diamond_Pattern {
@@ -7,44 +8,39 @@ public class Diamond_Pattern {
 	// Main driver method
 	public static void main(String[] args)
 	{
-		int number = 7;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int n = s.nextInt();
 
-		int m, n;
-
-		// Outer loop 1
-		// prints the first half diamond
-		for (m = 1; m <= number; m++) {
-
-			// Inner loop 1 print whitespaces inbetween
-			for (n = 1; n <= number - m; n++) {
+		// Outer loop for to print upper pyramid
+		for(int i=0;i<n;i++){
+			// Inner for loop to print the spaces
+			for(int j=0;j<n-i-1;j++){
 				System.out.print(" ");
 			}
 
-			// Inner loop 2 prints star
-			for (n = 1; n <= m * 2 - 1; n++) {
-				System.out.print("*");
+			// Inner for loop to print the stars
+			for(int j=0;j<=i;j++){
+				System.out.print("* ");
 			}
-
-			// Ending line after each row
+			// To start in new line
 			System.out.println();
+			
 		}
 
-		// Outer loop 2
-		// Prints the second half diamond
-		for (m = number - 1; m > 0; m--) {
+		// Outer loop for print lower pyramid
 
-			// Inner loop 1 print whitespaces inbetween
-			for (n = 1; n <= number - m; n++) {
+		for(int i=0;i<n-1;i++){
+			// Inner loop to print the space
+			for(int j=0;j<=i;j++){
 				System.out.print(" ");
 			}
-
-			// Inner loop 2 print star
-			for (n = 1; n <= m * 2 - 1; n++) {
-				System.out.print("*");
+			// Inner loop to print the stars
+			for(int j=0;j<n-i-1;j++){
+				System.out.print("* ");
 			}
-
-			// Ending line after each row
 			System.out.println();
 		}
+		
 	}
 }
