@@ -1,5 +1,5 @@
 //Find the extra element's index
-public class ExtraElement {
+public class Extraelement {
 
     static int findExtra(int arr1[], int arr2[], int n) {
         for (int i = 0; i < n; i++) {

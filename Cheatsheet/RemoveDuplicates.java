@@ -1,5 +1,5 @@
 // Remove Duplicates
-public class RemoveDuplicatesFromArray {
+public class RemoveDuplicates {
     
     public static int removeDuplicates(int[] nums) {
         int j = 1;
