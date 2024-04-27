@@ -1,5 +1,6 @@
+// Pattern-1: Rectangular Star Pattern
 class Square {
-    static void pattern1(int N)
+static void pattern1(int N)
  {
      for (int i = 0; i < N; i++)
      {
@@ -7,14 +8,23 @@ class Square {
          {
              System.out.print("* ");
          }
+         // for next row, give a line break
          System.out.println();
      }
  }
  
      public static void main(String[] args) {
 
-         int N = 5;
+         int N = 6;
          pattern1(N);
      }
  }
- 
+
+// Output:
+
+// * * * * * *
+// * * * * * *
+// * * * * * *
+// * * * * * *
+// * * * * * *
+// * * * * * *
