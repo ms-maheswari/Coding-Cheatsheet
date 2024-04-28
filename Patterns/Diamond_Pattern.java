@@ -1,32 +1,54 @@
 // Diamond Star Pattern
 public class Diamond_Star {
-    static void printpattern(int N){
-        for(int i =0; i<N*2;i++){
-            int col = i>N ? 2*N - i : i;
-            int spaces = N - col ;
+    static void printpattern(int n){
+        for(int i = 1;i<=n;i++){
+            for(int j=i;j<=n;j++){       //Decreasing space
+System.out.print("  ");
+            }
+            for(int j=1;j<i;j++){
+                System.out.print("* "); //Increasing star
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");//Increasing star
+            }
+            System.out.println();  
+        }
 
-           for(int s =0;s<spaces; s++){    // for spaces
-            System.out.print(" ");
+
+
+        for(int i = 2;i<=n;i++){
+            for(int j=1;j<=i;j++){       //Increasing space
+System.out.print("  ");
             }
-            for(int j = 0 ; j< col;j++){     
-            System.out.print("* ");
+            for(int j=i;j<n;j++){
+                System.out.print("* "); //Decreasing  star
             }
-            System.out.println();
+            for(int j=i;j<=n;j++){
+                System.out.print("* ");//Decreasing  star
+            }
+            System.out.println();  
         }
     }
     public static void main(String[] args){
-         int N = 4;
-         printpattern(N);
+         int n = 7;
+         printpattern(n);
 
     }
 }
 
 
-// output 
-//    * 
-//   * * 
-//  * * *
-// * * * *
-//  * * *
-//   * *
-//    *  
+
+//               * 
+//             * * *
+//           * * * * *
+//         * * * * * * *
+//       * * * * * * * * *
+//     * * * * * * * * * * *
+//   * * * * * * * * * * * * *
+//     * * * * * * * * * * *
+//       * * * * * * * * *
+//         * * * * * * *
+//           * * * * *
+//             * * *
+//               *
+
