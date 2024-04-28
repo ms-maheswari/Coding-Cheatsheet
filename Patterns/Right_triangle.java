@@ -1,4 +1,4 @@
-public class Right_angled_pattern {
+public class Right_triangle {
     public static void main(String[] args) {
         int n = 5;
         printPattern(n);
