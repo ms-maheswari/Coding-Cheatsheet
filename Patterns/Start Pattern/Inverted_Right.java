@@ -1,6 +1,6 @@
 // Inverted Right Pyramid
-public class pattern5 {
-    static void Inverted_Right(int N) {
+public class Inverted_Right {
+    static void printPattern(int N) {
          for (int i = 0; i < N; i++) {
             for (int j = N; j > i; j--)
             {

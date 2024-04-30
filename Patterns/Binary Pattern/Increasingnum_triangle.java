@@ -1,5 +1,5 @@
 // Increasing Number Triangle Pattern
-public class IncreasingNumber_Tri {
+public class Increasingnum_triangle {
     static void printpattern(int n) {
         
         int p=1;
