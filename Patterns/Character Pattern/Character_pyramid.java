@@ -1,11 +1,8 @@
-import java.util.Scanner;
 
 public class Character_pyramid {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-
-        System.out.print("Enter a number: ");
-        int n = s.nextInt();
+       
+        int n = 5;
         
         // Initialize the ASCII code variable for characters, starting at 64
         // ASCII value 64 is just before 'A' (which is 65)
@@ -27,10 +24,6 @@ public class Character_pyramid {
     }
 }
 
-
-// INPUT:
-
-// 4
 
 // OUTPUT:
 
