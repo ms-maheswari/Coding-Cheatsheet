@@ -1,4 +1,3 @@
-package Pattern;
 // Alpha-Ramp Pattern
 public class Alpha_Ramp {
 static void printpattern(int N)
