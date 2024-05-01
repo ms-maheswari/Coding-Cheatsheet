@@ -1,6 +1,4 @@
 // Decreasing Letter Triangle Pattern
-package Pattern;
-
 public class Decreasing_letter {
     static void printpattern(int n) {
         for(int i=1;i<=n;i++){
