@@ -1,4 +1,4 @@
-package Pattern;
+// Alpha-Hill Pattern
 
 public class Alpha_HillPattern {
     static void printpattern(int n) {
