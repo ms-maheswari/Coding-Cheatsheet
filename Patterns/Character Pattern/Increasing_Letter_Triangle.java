@@ -8,7 +8,7 @@ public class Increasing_Letter_Triangle {
        
 
         for(int i=1;i<=n;i++){
-            for(char ch = 'A'; ch<='A'+i;ch++){
+            for(char ch = 'A'; ch<'A'+i;ch++){
                 System.out.print(ch + " ");
                 
             }
