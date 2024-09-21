@@ -1,6 +1,6 @@
 package Arrays; 
-class EquilibriumIdx {
-  public static int findEquilibriumIdx(int nums[], int n) {
+class findEquilibriumIdx {
+  public static int EquilibriumIdx(int nums[], int n) {
     int leftSum, rightSum;
  
     for (int i = 0; i < n; i++) {
@@ -21,7 +21,7 @@ class EquilibriumIdx {
   public static void main(String[] args) {
     int n = 5;
     int nums[] = { 2, 3, -1, 8, 4};
-    int equilibriumidx = findEquilibriumIdx(nums, n);
+    int equilibriumidx = EquilibriumIdx(nums, n);
     System.out.println(equilibriumidx);
  
   }
